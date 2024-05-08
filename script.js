@@ -1,5 +1,5 @@
 const spanday = document.querySelector(".count");
-const startDate = new Date("2022-02-22");
+const startDate = new Date("2022-02-24");
 const today = new Date();
 
 const millisecondsInDay = 1000 * 60 * 60 * 24;
