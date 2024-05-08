@@ -1,0 +1,65 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(./img/photo_2024-05-03_16-04-38.jpg);
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.background {
+  background-color: rgba(0, 0, 0, 0.441);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  background-size: cover;
+  background-position: center;
+  animation: changeBackground 30s infinite;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  color: rgb(255, 255, 255);
+  line-height: 250%;
+  font-size: 3rem;
+  text-align: center;
+  position: relative;
+  z-index: 22;
+}
+/* .maintext {
+} */
+.count {
+  background-color: rgba(255, 255, 255, 0.432);
+  border-radius: 20px;
+  padding: 2% 5%;
+  font-size: 20rem;
+  color: red;
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url("./img/photo_2024-05-03_16-04-38.jpg");
+  }
+  25% {
+    background-image: url("./img/photo_2024-05-04_08-15-10.jpg");
+  }
+  50% {
+    background-image: url("./img/photo_2024-05-04_23-03-24.jpg");
+  }
+  75% {
+    background-image: url("./img/photo_2024-05-05_04-26-10.jpg");
+  }
+  100% {
+    background-image: url("./img/photo_2024-05-03_16-04-38.jpg");
+  }
+}
