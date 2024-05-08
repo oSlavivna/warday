@@ -31,6 +31,5 @@ function setAnimation() {
     backgroundElement.style.animation = currentAnimation;
   }, 10);
 }
-
-// Викликаємо функцію setAnimation()
+ 
 setInterval(setAnimation, 150000);
